@@ -16,13 +16,12 @@ $('#registerform').click(function(){
 });
 
 
-
-
 $(document).mouseup(function (e)
 {
     var container = $(".login");
 
-    if (!container.is(e.target) // if the target of the click isn't the container...
+    // if the target of the click isn't the container...
+    if (!container.is(e.target)
         && container.has(e.target).length === 0) // ... nor a descendant of the container
     {
         container.hide();
